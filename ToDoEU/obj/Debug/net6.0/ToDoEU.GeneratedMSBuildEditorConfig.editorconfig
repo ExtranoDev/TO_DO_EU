@@ -9,69 +9,69 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ToDoEU
 build_property.RootNamespace = ToDoEU
-build_property.ProjectDir = c:\Users\Joshua\Desktop\TO_DO_EU\TO_DO_EU\ToDoEU\
+build_property.ProjectDir = C:\Users\Joshua\Desktop\Tutorials\DotnetC#\ToDoEU\ToDoEU\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = c:\Users\Joshua\Desktop\TO_DO_EU\TO_DO_EU\ToDoEU
+build_property.MSBuildProjectDirectory = C:\Users\Joshua\Desktop\Tutorials\DotnetC#\ToDoEU\ToDoEU
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/Admin/Delete.cshtml]
+[C:/Users/Joshua/Desktop/Tutorials/DotnetC\#/ToDoEU/ToDoEU/Views/Admin/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/Admin/Display.cshtml]
+[C:/Users/Joshua/Desktop/Tutorials/DotnetC\#/ToDoEU/ToDoEU/Views/Admin/Display.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGlzcGxheS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/Admin/DisplayAdmin.cshtml]
+[C:/Users/Joshua/Desktop/Tutorials/DotnetC\#/ToDoEU/ToDoEU/Views/Admin/DisplayAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGlzcGxheUFkbWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/Dashboard/Create.cshtml]
+[C:/Users/Joshua/Desktop/Tutorials/DotnetC\#/ToDoEU/ToDoEU/Views/Dashboard/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/Dashboard/Delete.cshtml]
+[C:/Users/Joshua/Desktop/Tutorials/DotnetC\#/ToDoEU/ToDoEU/Views/Dashboard/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/Dashboard/Display.cshtml]
+[C:/Users/Joshua/Desktop/Tutorials/DotnetC\#/ToDoEU/ToDoEU/Views/Dashboard/Display.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXERpc3BsYXkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/Dashboard/Edit.cshtml]
+[C:/Users/Joshua/Desktop/Tutorials/DotnetC\#/ToDoEU/ToDoEU/Views/Dashboard/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/Shared/Error.cshtml]
+[C:/Users/Joshua/Desktop/Tutorials/DotnetC\#/ToDoEU/ToDoEU/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/Shared/_Notification.cshtml]
+[C:/Users/Joshua/Desktop/Tutorials/DotnetC\#/ToDoEU/ToDoEU/Views/Shared/_Notification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Joshua/Desktop/Tutorials/DotnetC\#/ToDoEU/ToDoEU/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/UserAuthentication/Login.cshtml]
+[C:/Users/Joshua/Desktop/Tutorials/DotnetC\#/ToDoEU/ToDoEU/Views/UserAuthentication/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckF1dGhlbnRpY2F0aW9uXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/UserAuthentication/Registration.cshtml]
+[C:/Users/Joshua/Desktop/Tutorials/DotnetC\#/ToDoEU/ToDoEU/Views/UserAuthentication/Registration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckF1dGhlbnRpY2F0aW9uXFJlZ2lzdHJhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/_ViewImports.cshtml]
+[C:/Users/Joshua/Desktop/Tutorials/DotnetC\#/ToDoEU/ToDoEU/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/_ViewStart.cshtml]
+[C:/Users/Joshua/Desktop/Tutorials/DotnetC\#/ToDoEU/ToDoEU/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/Shared/_Layout.cshtml]
+[C:/Users/Joshua/Desktop/Tutorials/DotnetC\#/ToDoEU/ToDoEU/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-z8qj8yh2pi

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using ToDoEU.Models.Domain;
 using ToDoEU.Models.DTO;
@@ -9,7 +10,7 @@ namespace ToDoEU.Controllers
     public class DashboardController : Controller
     {
         private readonly ToDoDbContext _db;
-        private readonly string? _userId;
+        private string? _userId;
         public DashboardController(ToDoDbContext db)
         {
             _db = db;
@@ -23,7 +24,7 @@ namespace ToDoEU.Controllers
             }
             else
             {
-                IEnumerable<ToDoItemModel> toDoList = _db.ToDoItems.Where(q => q.userId == _userId).ToList();
+                IEnumerable<ToDoItemModel> toDoList = _db.ToDoItems.ToList();
                 if (toDoList == null)
                 {
                     return NotFound();
@@ -31,7 +32,7 @@ namespace ToDoEU.Controllers
                 return View(toDoList);
             }
         }
-        public IActionResult Create()
+        public IActionResult Create(string name)
         {
             return View();
         }
@@ -50,7 +51,7 @@ namespace ToDoEU.Controllers
                 //string todoItemId = myuuid.ToString();
                 // Don't forget to insert email from form
                 //toDoObj.ItemId = todoItemId;
-                toDoObj.userId = _userId;
+                toDoObj.userId = User.Identity.Name;
                 toDoObj.ItemStatus = "pending";
                 _db.ToDoItems.Add(toDoObj);
                 _db.SaveChanges();
@@ -70,7 +71,7 @@ namespace ToDoEU.Controllers
             {
                 return NotFound();
             }
-            var toDoFromDb = _db.ToDoItems.Find(itemId);
+            var toDoFromDb = _db.ToDoItems.Find(itemId.Value);
             //var categoryFromDbFirst = _db.Categories.FirstOrDefault(u => u.Id == id);
             //var categoryFromDbSingle = _db.Categories.SingleOrDefault(u => u.Id == id);
 
@@ -89,7 +90,7 @@ namespace ToDoEU.Controllers
             {
                 ModelState.AddModelError("name", "Display Order cannot exactly match the Name.");
             }
-            if (ModelState.IsValid)
+            if (toDoObj.ItemName != "" && toDoObj.ItemDescription.ToString() != "")
             {
                 _db.ToDoItems.Update(toDoObj);
                 _db.SaveChanges();

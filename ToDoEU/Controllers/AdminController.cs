@@ -23,7 +23,7 @@ namespace ToDoEU.Controllers
             }
             else
             {
-                IEnumerable<ToDoItemModel> toDoList = _db.ToDoItems.Where(q => q.userId == _userId).ToList();
+                IEnumerable<ToDoItemModel> toDoList = _db.ToDoItems.ToList();
                 if (toDoList == null)
                 {
                     return NotFound();
@@ -40,7 +40,7 @@ namespace ToDoEU.Controllers
             }
             else
             {
-                var toDoList = _db.ToDoItems.ToList();
+                IEnumerable<ToDoItemModel> toDoList = _db.ToDoItems.ToList();
                 if (toDoList == null)
                     return NotFound();
                 return View(toDoList);
@@ -77,7 +77,7 @@ namespace ToDoEU.Controllers
             _db.ToDoItems.Remove(toDoObj);
             _db.SaveChanges();
             TempData["success"] = "ToDo Goal successfully deleted";
-            return RedirectToAction("Display");
+            return RedirectToAction("DisplayAdmin");
         }
     }
 }

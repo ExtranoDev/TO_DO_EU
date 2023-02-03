@@ -1,15 +1,18 @@
 ﻿@model IEnumerable<ToDoEU.Models.DTO.ToDoItemModel>
 @{
-    var username = User.Identity.Name;
+    var name = User.Identity.Name;
     ViewData["Title"] = "User Dashboard";
 }
 <div class="container p-3">
     <div class="row pt-4">
         <div class="col-6">
-            <h2 class="text-primary">TODO List</h2>
+            <h2 class="text-primary">@name.ToUpper(), Customize Your TODO List</h2>
         </div>
         <div class="col-6 text-end">
-            <a asp-controller="Dashboard" asp-action="Create" class="btn btn-primary">
+            <form>
+
+            </form>
+            <a asp-controller="Dashboard" asp-action="Create" class="btn btn-primary" asp-route-id="@name">
                 <i class="bi bi-plus-circle"></i>&nbsp; Create New Goal
             </a>
         </div>
@@ -27,7 +30,9 @@
     <tbody>
             @foreach (var obj in Model)
             {
-                <tr>
+                @if (obj.userId == name)
+                {
+                    <tr>
                     <td width="30%">
                     @obj.ItemName
                     </td>
@@ -47,7 +52,8 @@
                         </a>
                         </div>
                     </td>
-                </tr>
+                    </tr>
+                }
             }
     </tbody>
 </table>

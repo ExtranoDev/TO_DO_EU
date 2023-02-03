@@ -25,7 +25,7 @@
                         @if (User.IsInRole("admin"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Display">Admin</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="DisplayAdmin">Admin</a>
                             </li>
                         }
                         <li class="nav-item">
@@ -41,12 +41,6 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - ToDo Creator - <a asp-area="" asp-controller="Dashboard" asp-action="Display">SIGNUP</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
