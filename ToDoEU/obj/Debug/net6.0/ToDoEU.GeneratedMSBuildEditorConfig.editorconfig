@@ -16,8 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = c:\Users\Joshua\Desktop\TO_DO_EU\TO_DO_EU\ToDoEU
 build_property._RazorSourceGeneratorDebug = 
 
+[c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/Admin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/Admin/Display.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGlzcGxheS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/Admin/DisplayAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGlzcGxheUFkbWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/Joshua/Desktop/TO_DO_EU/TO_DO_EU/ToDoEU/Views/Dashboard/Create.cshtml]

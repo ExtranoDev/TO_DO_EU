@@ -12,18 +12,15 @@
         </div>
         <!-- <div asp-validation-summary="All"></div> -->
         <div class="mb-3">
-            <label asp-for="ItemName"></label>
-            <input asp-for="ItemName" class="form-control" />
+            <input asp-for="ItemName" class="form-control" placeholder="Activity" />
             <span asp-validation-for="ItemName" class="text-danger"></span>
         </div>
         <div class="mb-3">
-            <label asp-for="ItemDescription"></label>
-            <input asp-for="ItemDescription" class="form-control" />
+            <input asp-for="ItemDescription" class="form-control" placeholder="Short description" />
             <span asp-validation-for="ItemDescription" class="text-danger"></span>
         </div>
         <div class="mb-3">
-            <label asp-for="ItemStatus"></label>
-            <input asp-for="ItemStatus" class="form-control" disabled value="pending"/>
+            <input asp-for="ItemStatus" class="form-control" disabled value="Status pending"/>
         </div>
         <button type="submit" class="btn btn-primary" style="width:150px">Create</button>
         <a asp-controller="Dashboard" asp-action="Display" class="btn btn-secondary" style="width:150px">

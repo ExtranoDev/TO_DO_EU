@@ -1,7 +1,6 @@
 ﻿@model IEnumerable<ToDoEU.Models.DTO.ToDoItemModel>
 @{
-    var username = User.Identity.Name;
-    ViewData["Title"] = "User Dashboard";
+    ViewData["Title"] = "Admin Dashboard";
 }
 <div class="container p-3">
     <div class="row pt-4">
@@ -22,35 +21,33 @@
             <th>ToDo Activity</th>
             <th>Discription</th>
             <th>Status</th>
+            <th>User</th>
         </tr>
     </thead>
     <tbody>
             @foreach (var obj in Model)
             {
-                @if (obj.userId == username)
-                {
-                  <tr>
-                  <td width="30%">
+                <tr>
+                    <td width="30%">
                     @obj.ItemName
-                  </td>
-                  <td width="30%">
+                    </td>
+                    <td width="30%">
                     @obj.ItemDescription
-                  </td>
-                  <td width="20%">
-                    @obj.ItemStatus
-                  </td>
+                    </td>
+                    <td width="20%">
+                        @obj.ItemStatus
+                    </td>
+                    <td width="20%">
+                        @obj.userId
+                    </td>
                     <td>
                         <div class="w-75 btn-group" role="group">
-                        <a asp-controller="Dashboard" asp-action="Edit" asp-route-ItemId="@obj.ItemId" class="text-success">
-                            <i class="bi bi-pencil-square"></i> Edit
-                        </a>|
-                        <a asp-controller="Dashboard" asp-action="Delete" asp-route-ItemId="@obj.ItemId" class="text-danger">
-                            <i class="bi bi-trash3"></i> Delete
-                        </a>
+                            <a asp-controller="Admin" asp-action="Delete" asp-route-ItemId="@obj.ItemId" class="text-danger">
+                                <i class="bi bi-trash3"></i> Delete
+                            </a>
                         </div>
                     </td>
-                  </tr>
-                }
+                </tr>
             }
     </tbody>
 </table>

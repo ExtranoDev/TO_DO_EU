@@ -24,7 +24,7 @@
             <input asp-for="ItemStatus" class="form-control" disabled/>
         </div>
         <button type="submit" class="btn btn-danger" style="width:150px">Delete</button>
-        <a asp-controller="Dashboard" asp-action="Display" class="btn btn-secondary" style="width:150px">
+        <a asp-controller="Admin" asp-action="Delete" class="btn btn-secondary" style="width:150px">
             Back to ToDo List
         </a>
     </div>
@@ -37,4 +37,3 @@
         <partial name="_Notification" />
     }
 }
-

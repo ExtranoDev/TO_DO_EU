@@ -17,7 +17,6 @@ namespace ToDoEU.Controllers
         }
         public IActionResult Display()
         {
-
             if (_userId == null)
             {
                 return NotFound();
@@ -47,11 +46,12 @@ namespace ToDoEU.Controllers
             }
             if (toDoObj.ItemName != null && toDoObj.ItemDescription.ToString() != null)
             {
-                Guid myuuid = Guid.NewGuid();
-                string todoItemId = myuuid.ToString();
+                //Guid myuuid = Guid.NewGuid();
+                //string todoItemId = myuuid.ToString();
                 // Don't forget to insert email from form
-                toDoObj.ItemId = todoItemId;
+                //toDoObj.ItemId = todoItemId;
                 toDoObj.userId = _userId;
+                toDoObj.ItemStatus = "pending";
                 _db.ToDoItems.Add(toDoObj);
                 _db.SaveChanges();
                 TempData["success"] = "ToDo Goal successfully created";
@@ -66,7 +66,7 @@ namespace ToDoEU.Controllers
         //GET
         public IActionResult Edit(int? itemId)
         {
-            if (itemId == null)
+            if (!itemId.HasValue)
             {
                 return NotFound();
             }
@@ -101,11 +101,11 @@ namespace ToDoEU.Controllers
         //GET
         public IActionResult Delete(int? itemId)
         {
-            if (itemId == null)
+            if (!itemId.HasValue)
             {
                 return NotFound();
             }
-            var toDoFromDb = _db.ToDoItems.Find(itemId);
+            var toDoFromDb = _db.ToDoItems.Find(itemId.Value);
             //var categoryFromDbFirst = _db.Categories.FirstOrDefault(u => u.Id == id);
             //var categoryFromDbSingle = _db.Categories.SingleOrDefault(u => u.Id == id);
 
@@ -120,7 +120,7 @@ namespace ToDoEU.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeleteToDo(int? itemId)
         {
-            ToDoItemModel? toDoObj = _db.ToDoItems.Find(itemId);
+            ToDoItemModel? toDoObj = _db.ToDoItems.Find(itemId.Value);
             if (toDoObj == null)
             {
                 return NotFound();

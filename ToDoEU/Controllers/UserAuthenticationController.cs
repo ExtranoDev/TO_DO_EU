@@ -48,7 +48,7 @@ namespace ToDoEU.Controllers
             var result = await _service.LoginAysnc(model);
             if (result.StatusCode == 1)
             {
-                return RedirectToAction("Display", "Dashboard"); ;
+                return RedirectToAction("Display", "Dashboard", model); ;
             }
             else
             {

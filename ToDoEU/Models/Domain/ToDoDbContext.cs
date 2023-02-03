@@ -21,7 +21,7 @@ namespace ToDoEU.Models.Domain
 
                 entity.Property(e => e.ItemStatus)
                 .IsRequired()
-                .HasMaxLength(1);
+                .HasMaxLength(15);
             });
 
             base.OnModelCreating(builder);
